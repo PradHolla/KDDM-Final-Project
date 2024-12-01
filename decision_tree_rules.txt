@@ -8,97 +8,94 @@
 |   |   |--- seat_comfort >  -1.68
 |   |   |   |--- class <= -0.15
 |   |   |   |   |--- ease_of_online_booking <= 0.02
-|   |   |   |   |   |--- online_boarding <= 0.88
-|   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |--- customer_type <= 0.82
 |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 24
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
-|   |   |   |   |   |   |   |   |--- online_support >  0.75
-|   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
 |   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
 |   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
 |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -1.55
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |   |--- gender <= 0.02
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |   |--- gender >  0.02
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.92
-|   |   |   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.25
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.92
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |--- flight_distance <= 4.20
-|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- online_support >  0.75
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.80
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.80
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |   |--- age <= 0.27
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.20
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.20
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  1.25
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- age >  0.27
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.37
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.92
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- age <= -0.19
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- age >  -0.19
+|   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
+|   |   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- flight_distance >  4.20
-|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |   |   |   |   |   |--- age <= 1.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- age >  1.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |--- age <= -0.19
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- age >  -0.19
+|   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- online_boarding >  0.88
-|   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.00
-|   |   |   |   |   |   |   |   |--- flight_distance <= 1.88
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- flight_distance >  1.88
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.00
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.32
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.32
-|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.38
+|   |   |   |   |   |   |   |   |   |--- age <= 0.27
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- age >  0.27
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.04
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.04
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.38
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.27
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.27
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |--- ease_of_online_booking >  0.02
 |   |   |   |   |   |--- customer_type <= 0.82
 |   |   |   |   |   |   |--- leg_room_service <= 0.01
@@ -112,45 +109,45 @@
 |   |   |   |   |   |   |   |   |   |   |--- flight_distance >  3.14
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= -1.63
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.21
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.21
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  -1.63
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  1.63
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
 |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.74
+|   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.74
+|   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- gender >  0.02
 |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- leg_room_service >  0.01
 |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 2.47
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  2.47
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= -0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  -0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
-|   |   |   |   |   |   |   |   |   |--- age <= -0.46
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
+|   |   |   |   |   |   |   |   |--- age <= -0.46
+|   |   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- age >  -0.46
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- age >  -0.46
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
 |   |   |   |   |   |   |   |--- gate_location >  0.39
 |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |--- customer_type >  0.82
@@ -160,189 +157,171 @@
 |   |   |   |   |   |   |   |--- seat_comfort <= -0.96
 |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- seat_comfort >  -0.96
-|   |   |   |   |   |   |   |   |--- flight_distance <= -1.36
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- flight_distance >  -1.36
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.03
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  1.03
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |--- class >  -0.15
-|   |   |   |   |--- flight_distance <= -1.02
-|   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |--- online_boarding <= 0.88
-|   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
-|   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |--- age <= 0.04
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- age >  0.04
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- online_support >  0.75
-|   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- online_boarding >  0.88
-|   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.79
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- ease_of_online_booking >  0.79
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= -0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  -0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |--- flight_distance >  -1.02
-|   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |--- flight_distance <= 1.03
+|   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
 |   |   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
 |   |   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |--- flight_distance <= 0.33
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.13
-|   |   |   |   |   |   |   |   |   |   |--- class <= 1.46
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- class >  1.46
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.13
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.13
+|   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |--- flight_distance >  0.33
-|   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.33
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- flight_distance >  1.03
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- class >  -0.15
+|   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |--- age <= -0.39
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- age >  -0.39
+|   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.33
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
-|   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |   |--- age <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- age >  -1.05
+|   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |--- flight_distance <= 0.41
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- flight_distance >  0.41
+|   |   |   |   |   |   |   |   |   |--- age <= 0.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- age >  0.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- flight_distance <= 0.13
+|   |   |   |   |   |   |   |   |--- gate_location <= -0.37
+|   |   |   |   |   |   |   |   |   |--- class <= 1.46
+|   |   |   |   |   |   |   |   |   |   |--- age <= -1.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- age >  -1.52
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- class >  1.46
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.06
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.06
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.62
-|   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 3.07
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  3.07
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |--- gate_location >  -0.37
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- flight_distance >  0.13
+|   |   |   |   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.97
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.62
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.92
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.92
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
-|   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.97
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- age >  -0.99
+|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
 |   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
 |   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 25
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -1.55
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |--- flight_distance <= 0.53
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |--- age <= -1.25
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- age >  -1.25
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
 |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |--- age <= -1.98
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- age >  -1.98
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |--- flight_distance >  0.53
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.53
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
+|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.62
+|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= 3.07
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.53
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  3.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.62
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.92
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.26
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.26
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.92
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |--- flight_distance <= -1.21
+|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- flight_distance >  -1.21
+|   |   |   |   |   |   |   |   |   |--- online_support <= -0.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- online_support >  -0.78
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.02
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.02
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |--- on-board_service <= -1.55
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -0.59
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -0.59
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- flight_distance <= -0.12
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- flight_distance >  -0.12
+|   |   |   |   |   |   |   |   |--- age <= -0.92
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.97
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- age >  -0.92
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 5.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  5.81
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 6.16
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  6.16
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |--- class: 0
 |   |--- seat_comfort >  0.48
 |   |   |--- seat_comfort <= 1.20
 |   |   |   |--- gate_location <= 0.39
@@ -351,226 +330,187 @@
 |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |--- age <= -0.49
-|   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.63
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.63
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |--- age <= 1.00
+|   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
+|   |   |   |   |   |   |   |   |   |--- age <= -2.08
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- age >  -0.49
-|   |   |   |   |   |   |   |   |--- online_support <= -1.54
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.27
+|   |   |   |   |   |   |   |   |   |--- age >  -2.08
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.27
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- online_support >  -1.54
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.65
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.65
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.92
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.92
 |   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.97
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.97
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |--- age >  1.00
+|   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.37
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.37
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |--- age <= -0.99
-|   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.78
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.78
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.79
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.79
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- age >  -0.99
 |   |   |   |   |   |   |   |--- flight_distance <= 1.49
-|   |   |   |   |   |   |   |   |--- inflight_wifi_service <= -0.57
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.22
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.29
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.22
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- inflight_wifi_service >  -0.57
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.06
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.06
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.04
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.04
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 4.30
+|   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  4.30
+|   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- flight_distance >  1.49
 |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |--- class >  -0.15
 |   |   |   |   |   |--- cleanliness <= -0.18
 |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.21
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 0.66
 |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -2.14
 |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -1.14
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.55
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.55
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
+|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -2.14
 |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= -1.51
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.65
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.65
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  -1.51
 |   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
 |   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.21
-|   |   |   |   |   |   |   |   |--- age <= 1.69
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.24
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes >  0.66
+|   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.08
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 0.87
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.08
 |   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |--- age >  1.69
-|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
 |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
-|   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
 |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -0.24
 |   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.24
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.24
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -0.24
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.31
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -2.31
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -2.31
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
+|   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |--- age <= 0.57
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
-|   |   |   |   |   |   |   |   |--- leg_room_service <= -2.31
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- leg_room_service >  -2.31
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.09
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.09
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- age >  0.57
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |--- cleanliness >  -0.18
 |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
-|   |   |   |   |   |   |   |--- on-board_service <= 0.03
-|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |--- age <= -1.38
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- age >  -1.38
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.38
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.38
+|   |   |   |   |   |   |   |--- online_boarding <= 0.88
+|   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
+|   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.38
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.76
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- online_boarding >  0.88
+|   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.79
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.79
+|   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.76
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -1.55
+|   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- on-board_service >  0.03
-|   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |--- age <= 0.14
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- age >  0.14
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
 |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
 |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.22
 |   |   |   |   |   |   |   |   |--- age <= 1.53
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.64
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.64
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
 |   |   |   |   |   |   |   |   |--- age >  1.53
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.59
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.75
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.73
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.75
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.59
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.88
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.73
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.22
 |   |   |   |   |   |   |   |   |--- flight_distance <= -1.33
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- flight_distance >  -1.33
 |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.02
 |   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.11
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
 |   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.11
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.02
@@ -584,30 +524,27 @@
 |   |   |   |   |   |   |--- class <= -0.15
 |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.32
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.32
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
 |   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
 |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |--- age <= -0.89
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 2.70
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.25
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  2.70
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.25
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- age >  -0.89
 |   |   |   |   |   |   |   |   |   |--- online_boarding <= -1.43
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.24
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.24
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |--- online_boarding >  -1.43
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- class >  -0.15
@@ -615,117 +552,132 @@
 |   |   |   |   |   |   |   |   |--- flight_distance <= -0.54
 |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.61
 |   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -0.24
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
 |   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -0.24
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.61
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- flight_distance >  -0.54
 |   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.30
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- food_and_drink >  0.45
 |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.43
 |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.33
 |   |   |   |   |   |   |   |   |   |   |--- age <= 0.53
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
 |   |   |   |   |   |   |   |   |   |   |--- age >  0.53
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
 |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.33
 |   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.34
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
 |   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.34
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.43
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -1.54
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -1.54
-|   |   |   |   |   |   |   |   |   |   |--- age <= -1.18
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- age >  -1.18
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
-|   |   |   |   |   |   |--- ease_of_online_booking <= -1.51
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.27
-|   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
-|   |   |   |   |   |   |   |   |   |--- age <= 1.16
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= -1.54
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  -1.54
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |--- age >  1.16
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
+|   |   |   |   |   |   |   |   |   |--- age <= -1.02
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.10
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.10
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.27
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- ease_of_online_booking >  -1.51
-|   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- age >  -1.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |--- checkin_service <= 0.92
 |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
 |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
 |   |   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
 |   |   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.88
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
-|   |   |   |   |   |   |   |   |   |--- age <= -0.52
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.40
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.40
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |--- age >  -0.52
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 17
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -2.14
+|   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -2.14
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.86
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.86
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.37
+|   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |--- class <= -0.15
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.37
+|   |   |   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 3.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  3.45
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |--- age <= 1.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- age >  1.10
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- departure_arrival_time_convenient >  0.99
 |   |   |   |   |   |--- class <= -0.15
 |   |   |   |   |   |   |--- gate_location <= 1.16
 |   |   |   |   |   |   |   |--- age <= -0.06
 |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.02
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.02
+|   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- age >  -0.06
 |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= -0.19
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.11
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  -0.19
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.11
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |--- class: 0
@@ -740,10 +692,10 @@
 |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |--- class >  -0.15
@@ -752,31 +704,28 @@
 |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
 |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
 |   |   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
 |   |   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
 |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.33
 |   |   |   |   |   |   |   |   |--- age <= 1.56
-|   |   |   |   |   |   |   |   |   |--- age <= 1.06
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- age >  1.06
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= -1.40
+|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  -1.40
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- age >  1.56
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- food_and_drink >  1.14
@@ -785,10 +734,10 @@
 |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
 |   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |--- age <= 1.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |   |--- age >  1.29
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
@@ -796,40 +745,34 @@
 |   |   |   |   |   |   |   |   |   |--- online_support <= -1.54
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |--- online_support >  -1.54
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.88
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.48
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |--- seat_comfort >  1.20
 |   |   |   |--- leg_room_service <= 0.78
 |   |   |   |   |--- ease_of_online_booking <= 0.79
-|   |   |   |   |   |--- arrival_delay_in_minutes <= 3.26
-|   |   |   |   |   |   |--- cleanliness <= -1.92
-|   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |--- on-board_service <= -1.16
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- on-board_service >  -1.16
+|   |   |   |   |   |--- food_and_drink <= 1.14
+|   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.18
+|   |   |   |   |   |   |   |--- cleanliness <= -1.92
+|   |   |   |   |   |   |   |   |--- baggage_handling <= 0.26
 |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- cleanliness >  -1.92
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- arrival_delay_in_minutes >  3.26
-|   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.29
-|   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.29
-|   |   |   |   |   |   |   |--- checkin_service <= 0.53
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- checkin_service >  0.53
-|   |   |   |   |   |   |   |   |--- inflight_entertainment <= -0.66
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- inflight_entertainment >  -0.66
+|   |   |   |   |   |   |   |   |--- baggage_handling >  0.26
 |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- cleanliness >  -1.92
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.18
+|   |   |   |   |   |   |   |--- online_boarding <= 0.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- online_boarding >  0.50
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- food_and_drink >  1.14
+|   |   |   |   |   |   |--- class: 1
 |   |   |   |   |--- ease_of_online_booking >  0.79
 |   |   |   |   |   |--- class <= -0.15
 |   |   |   |   |   |   |--- food_and_drink <= 1.14
@@ -844,58 +787,69 @@
 |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  -1.32
 |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |--- food_and_drink >  1.14
-|   |   |   |   |   |   |   |--- age <= 1.03
-|   |   |   |   |   |   |   |   |--- flight_distance <= 1.74
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.08
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.08
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- flight_distance >  1.74
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- age >  1.03
-|   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- online_support >  -0.01
+|   |   |   |   |   |   |   |--- age <= 0.07
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- age >  0.07
+|   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
 |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
+|   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |--- class >  -0.15
 |   |   |   |   |   |   |--- class: 1
 |   |   |   |--- leg_room_service >  0.78
 |   |   |   |   |--- class: 1
 |--- inflight_entertainment >  0.09
 |   |--- ease_of_online_booking <= 0.02
-|   |   |--- inflight_entertainment <= 0.83
-|   |   |   |--- online_support <= 0.75
-|   |   |   |   |--- seat_comfort <= 1.20
+|   |   |--- seat_comfort <= 1.20
+|   |   |   |--- seat_comfort <= -1.68
+|   |   |   |   |--- class: 1
+|   |   |   |--- seat_comfort >  -1.68
+|   |   |   |   |--- online_support <= 0.75
 |   |   |   |   |   |--- checkin_service <= -0.66
 |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.88
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 19
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  0.88
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= -0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  -0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= -0.74
+|   |   |   |   |   |   |   |--- inflight_entertainment <= 0.83
+|   |   |   |   |   |   |   |   |--- ease_of_online_booking <= -0.74
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -1.54
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  -0.74
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -1.54
+|   |   |   |   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- ease_of_online_booking >  -0.74
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |--- inflight_entertainment >  0.83
+|   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.83
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.83
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
 |   |   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- seat_comfort >  0.48
 |   |   |   |   |   |   |   |--- gate_location <= -0.37
 |   |   |   |   |   |   |   |   |--- age <= -0.85
@@ -906,908 +860,741 @@
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
 |   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
 |   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.10
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
 |   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.10
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
 |   |   |   |   |   |   |   |   |--- age >  -0.85
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.27
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.27
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.30
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.36
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.30
+|   |   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- gate_location >  -0.37
 |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.12
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.12
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |--- checkin_service >  -0.66
-|   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |--- online_boarding <= 0.88
-|   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 17
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 25
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |--- class <= -0.15
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
-|   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
-|   |   |   |   |   |   |   |   |   |--- class <= -0.15
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
-|   |   |   |   |   |   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 26
-|   |   |   |   |   |   |   |--- online_boarding >  0.88
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.90
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.90
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= -1.63
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  -1.63
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
 |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.49
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.49
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- online_support >  0.75
-|   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |--- class <= -0.15
-|   |   |   |   |   |   |   |--- age <= -0.56
-|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 0.66
-|   |   |   |   |   |   |   |   |   |--- online_boarding <= -1.43
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- online_boarding >  -1.43
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  0.66
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- age >  -0.56
-|   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |--- age <= -0.16
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- age >  -0.16
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
-|   |   |   |   |   |   |   |   |--- age <= -0.09
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- age >  -0.09
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
-|   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.22
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.22
-|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= -1.43
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  -1.43
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |--- seat_comfort <= -0.24
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.75
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.75
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- seat_comfort >  -0.24
-|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.38
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.38
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.19
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.19
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |--- food_and_drink <= -1.63
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- food_and_drink >  -1.63
-|   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |   |   |--- age <= -1.12
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- age >  -1.12
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -1.54
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -1.54
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.76
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.76
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |--- inflight_entertainment >  0.83
-|   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |--- class <= -0.15
-|   |   |   |   |   |--- age <= 2.62
-|   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |--- inflight_wifi_service <= -2.08
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- inflight_wifi_service >  -2.08
-|   |   |   |   |   |   |   |   |--- age <= 2.09
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- age >  2.09
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.42
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.42
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |--- age <= -0.92
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.10
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.48
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.48
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  1.10
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- age >  -0.92
-|   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.56
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.56
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- online_support >  0.75
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- age >  2.62
-|   |   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |   |--- gate_location <= -0.76
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- gate_location >  -0.76
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |--- customer_type <= 0.82
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.97
-|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.02
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.02
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.97
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- customer_type >  0.82
-|   |   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
 |   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |--- departure_delay_in_minutes <= 6.40
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- departure_delay_in_minutes >  6.40
-|   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.82
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |--- age <= 0.30
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |   |   |--- age >  0.30
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
-|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- age <= 0.86
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- age >  0.86
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.82
-|   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.35
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.35
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
+|   |   |   |   |   |   |   |   |   |   |--- age <= -1.05
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |--- food_and_drink <= -1.63
+|   |   |   |   |   |   |   |   |   |   |--- age >  -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |   |--- inflight_entertainment <= 0.83
+|   |   |   |   |   |   |   |--- online_boarding <= 0.88
+|   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= -1.51
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -1.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -1.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  -1.51
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- online_boarding >  0.88
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- food_and_drink >  -1.63
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
+|   |   |   |   |   |   |   |   |   |   |--- age <= 0.86
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- age >  0.86
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.46
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |--- inflight_entertainment >  0.83
+|   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.99
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- gender >  0.02
 |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |--- age <= -0.92
+|   |   |   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- age >  -0.92
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.80
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.80
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
 |   |   |   |   |   |   |   |   |   |   |--- age <= -0.03
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
 |   |   |   |   |   |   |   |   |   |   |--- age >  -0.03
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -1.14
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.83
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.83
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 1.12
+|   |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= -0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  -0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  1.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= -1.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  -1.54
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |   |   |   |--- age <= 0.14
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- age >  0.14
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |--- flight_distance <= -1.49
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- flight_distance >  -1.49
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.14
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.14
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |--- seat_comfort >  1.20
+|   |   |   |--- arrival_delay_in_minutes <= 4.60
+|   |   |   |   |--- class: 1
+|   |   |   |--- arrival_delay_in_minutes >  4.60
+|   |   |   |   |--- inflight_wifi_service <= 0.95
+|   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- inflight_wifi_service >  0.95
+|   |   |   |   |   |--- class: 1
+|   |--- ease_of_online_booking >  0.02
+|   |   |--- inflight_entertainment <= 0.83
+|   |   |   |--- class <= -0.15
+|   |   |   |   |--- checkin_service <= -0.66
+|   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |--- leg_room_service <= -2.31
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- leg_room_service >  -2.31
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- gate_location >  0.39
 |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
 |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.25
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.30
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.59
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.59
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.30
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.25
-|   |   |   |   |   |   |   |   |--- age <= 0.00
+|   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |--- customer_type <= 0.82
 |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- age >  0.00
-|   |   |   |   |   |   |   |   |   |--- age <= 1.16
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
+|   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- age >  1.16
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |--- class: 1
-|   |--- ease_of_online_booking >  0.02
-|   |   |--- customer_type <= 0.82
-|   |   |   |--- class <= -0.15
-|   |   |   |   |--- checkin_service <= -0.66
-|   |   |   |   |   |--- inflight_entertainment <= 0.83
-|   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |--- leg_room_service <= -2.31
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- leg_room_service >  -2.31
-|   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.69
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.69
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.14
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.14
+|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.14
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
 |   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |--- inflight_entertainment >  0.83
-|   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.63
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.63
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.66
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.66
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.32
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.32
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |--- checkin_service >  -0.66
-|   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |--- inflight_entertainment <= 0.83
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.03
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |--- inflight_entertainment >  0.83
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- leg_room_service >  0.78
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.68
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.68
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment <= 0.83
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |   |   |--- inflight_entertainment >  0.83
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
-|   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
-|   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= -0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  -0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
-|   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= -1.32
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  -1.32
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
-|   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |   |   |--- leg_room_service <= 0.01
-|   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  1.02
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |--- leg_room_service >  0.01
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 2.70
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.19
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  2.70
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.57
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.57
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
 |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |--- class >  -0.15
-|   |   |   |   |--- gender <= 0.02
-|   |   |   |   |   |--- departure_delay_in_minutes <= 3.03
-|   |   |   |   |   |   |--- inflight_entertainment <= 0.83
-|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
+|   |   |   |   |   |   |   |   |--- gate_location <= 1.16
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- gate_location >  1.16
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.79
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.79
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |--- online_support <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- online_support >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.23
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -2.31
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -2.31
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |   |   |   |--- seat_comfort <= -0.24
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- seat_comfort >  -0.24
+|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
 |   |   |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.51
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.51
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
+|   |   |   |   |   |   |   |   |   |--- age <= -2.04
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- age >  -2.04
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- age >  -0.99
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- flight_distance <= -0.11
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.69
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.69
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- flight_distance >  -0.11
+|   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |--- seat_comfort >  0.48
 |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 24
-|   |   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
-|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
-|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |--- leg_room_service <= -0.76
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- leg_room_service >  -0.76
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.03
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |--- inflight_entertainment >  0.83
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.04
-|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.04
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
-|   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
-|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- departure_delay_in_minutes >  3.03
-|   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |--- flight_distance <= -0.07
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.73
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.73
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- flight_distance >  -0.07
-|   |   |   |   |   |   |   |   |--- age <= 1.89
-|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 8.80
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  8.80
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 9.55
+|   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  9.55
+|   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |--- age <= 0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- age >  0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- class >  -0.15
+|   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |--- seat_comfort <= -0.24
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 2.94
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- online_boarding >  0.88
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- departure_delay_in_minutes >  2.94
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- seat_comfort >  -0.24
+|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |   |   |   |--- age <= 0.10
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.33
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.33
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- age >  1.89
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- age >  0.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.14
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.14
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 0.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  0.41
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.92
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.63
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.92
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |--- age >  -0.99
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- age <= -0.13
+|   |   |   |   |   |   |   |   |   |   |--- age <= -0.59
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- age >  -0.59
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- age >  -0.13
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.37
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.37
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |--- age <= -0.92
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |--- on-board_service <= -0.76
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- on-board_service >  -0.76
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- age >  -0.92
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -0.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |   |   |--- seat_comfort <= 0.48
 |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |--- gender >  0.02
-|   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |--- inflight_entertainment <= 0.83
-|   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 27
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- on-board_service >  0.81
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 5.23
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  5.23
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- inflight_entertainment >  0.83
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
-|   |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.27
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.69
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -1.10
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -1.10
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.69
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 29
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.35
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.27
-|   |   |   |   |   |   |   |   |   |--- online_boarding <= 0.11
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- online_boarding >  0.11
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |   |   |   |--- class: 1
-|   |   |--- customer_type >  0.82
-|   |   |   |--- seat_comfort <= 1.20
-|   |   |   |   |--- class <= -0.15
-|   |   |   |   |   |--- age <= -0.99
-|   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
-|   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
-|   |   |   |   |   |   |   |   |--- age <= -1.05
-|   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- age >  -1.05
-|   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.13
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.13
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- on-board_service >  -0.76
-|   |   |   |   |   |   |   |--- flight_distance <= 2.20
-|   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
-|   |   |   |   |   |   |   |   |   |--- online_boarding <= -0.66
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- online_boarding >  -0.66
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
-|   |   |   |   |   |   |   |   |   |--- age <= -2.04
-|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- age >  -2.04
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 3.43
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  3.43
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |--- flight_distance >  2.20
 |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |--- age >  -0.99
-|   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= -0.27
+|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.72
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.72
+|   |   |   |   |   |   |   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  -0.27
+|   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
+|   |   |   |   |   |   |   |   |   |   |--- age <= 1.59
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- age >  1.59
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- inflight_entertainment >  0.83
+|   |   |   |--- type_of_travel <= 0.41
+|   |   |   |   |--- customer_type <= 0.82
+|   |   |   |   |   |--- online_boarding <= -1.43
+|   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.62
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.62
+|   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.66
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.66
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- online_boarding >  -1.43
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- customer_type >  0.82
+|   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |--- inflight_wifi_service <= 0.19
 |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
 |   |   |   |   |   |   |   |   |--- flight_distance <= 2.46
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.14
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.78
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.14
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |   |   |--- flight_distance >  2.46
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking <= 0.79
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= 0.30
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- ease_of_online_booking >  0.79
+|   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  0.30
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.04
-|   |   |   |   |   |   |   |   |   |   |--- online_support <= 0.75
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- online_support >  0.75
+|   |   |   |   |   |   |--- inflight_wifi_service >  0.19
+|   |   |   |   |   |   |   |--- class <= -0.15
+|   |   |   |   |   |   |   |   |--- flight_distance <= 1.46
+|   |   |   |   |   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- age >  -0.99
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.04
+|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- flight_distance >  1.46
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- class >  -0.15
+|   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -1.90
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -1.90
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
 |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |--- online_support <= -1.54
+|   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
+|   |   |   |   |   |   |   |   |   |   |--- age <= -1.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- age >  -1.22
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |--- type_of_travel >  0.41
+|   |   |   |   |--- gender <= 0.02
+|   |   |   |   |   |--- arrival_delay_in_minutes <= 3.01
+|   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.34
+|   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |   |--- food_and_drink <= 0.45
+|   |   |   |   |   |   |   |   |   |   |--- class <= 1.46
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- class >  1.46
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- food_and_drink >  0.45
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -1.63
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.34
+|   |   |   |   |   |   |   |--- seat_comfort <= 1.20
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
+|   |   |   |   |   |   |   |   |   |--- gate_location <= 0.39
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort <= 0.48
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- seat_comfort >  0.48
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- gate_location >  0.39
+|   |   |   |   |   |   |   |   |   |   |--- age <= 0.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- age >  0.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
+|   |   |   |   |   |   |   |   |   |--- seat_comfort <= -0.96
 |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- online_support >  -1.54
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.97
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.97
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- on-board_service >  -0.76
-|   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.92
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.92
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
-|   |   |   |   |   |   |   |   |   |--- age <= -0.19
-|   |   |   |   |   |   |   |   |   |   |--- age <= -0.56
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |   |--- age >  -0.56
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- age >  -0.19
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 1.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  1.99
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |--- class >  -0.15
-|   |   |   |   |   |--- age <= -0.99
+|   |   |   |   |   |   |   |   |   |--- seat_comfort >  -0.96
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- leg_room_service >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- arrival_delay_in_minutes >  3.01
+|   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
+|   |   |   |   |   |   |   |--- seat_comfort <= -1.68
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- seat_comfort >  -1.68
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- inflight_wifi_service >  0.95
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- gender >  0.02
+|   |   |   |   |   |--- seat_comfort <= 1.20
 |   |   |   |   |   |   |--- seat_comfort <= 0.48
 |   |   |   |   |   |   |   |--- seat_comfort <= -1.68
 |   |   |   |   |   |   |   |   |--- class: 1
 |   |   |   |   |   |   |   |--- seat_comfort >  -1.68
-|   |   |   |   |   |   |   |   |--- gate_location <= -1.14
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- gate_location >  -1.14
-|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- class: 0
 |   |   |   |   |   |   |--- seat_comfort >  0.48
-|   |   |   |   |   |   |   |--- on-board_service <= -0.76
-|   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |--- gate_location <= -1.14
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- gate_location >  -1.14
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.00
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.00
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes <= -0.36
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |   |   |--- departure_delay_in_minutes >  -0.36
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= 0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  0.99
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- on-board_service >  -0.76
-|   |   |   |   |   |   |   |   |--- age <= -1.71
-|   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |   |   |   |   |--- age >  -1.71
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.23
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness <= -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |   |--- cleanliness >  -1.05
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.23
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -0.66
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
-|   |   |   |   |   |--- age >  -0.99
-|   |   |   |   |   |   |--- cleanliness <= 0.69
-|   |   |   |   |   |   |   |--- gate_location <= -0.37
-|   |   |   |   |   |   |   |   |--- food_and_drink <= 1.14
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service <= 0.95
-|   |   |   |   |   |   |   |   |   |   |--- age <= 0.40
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- age >  0.40
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- inflight_wifi_service >  0.95
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  -0.37
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |--- food_and_drink >  1.14
+|   |   |   |   |   |   |   |--- cleanliness <= -1.92
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- cleanliness >  -1.92
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient <= -0.32
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- departure_arrival_time_convenient >  -0.32
 |   |   |   |   |   |   |   |   |   |--- checkin_service <= 0.92
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |--- gate_location >  -0.37
-|   |   |   |   |   |   |   |   |--- gate_location <= 1.16
-|   |   |   |   |   |   |   |   |   |--- baggage_handling <= 0.70
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.48
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= -1.55
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  -1.55
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
-|   |   |   |   |   |   |   |   |   |   |--- flight_distance >  0.48
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |   |   |   |   |   |--- baggage_handling >  0.70
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.81
+|   |   |   |   |   |   |   |   |   |--- checkin_service >  0.92
+|   |   |   |   |   |   |   |   |   |   |--- gate_location <= -0.37
 |   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |   |--- on-board_service >  0.81
+|   |   |   |   |   |   |   |   |   |   |--- gate_location >  -0.37
 |   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |--- gate_location >  1.16
-|   |   |   |   |   |   |   |   |   |--- age <= 0.07
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling <= -0.17
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- baggage_handling >  -0.17
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |   |   |   |   |   |--- age >  0.07
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |--- cleanliness >  0.69
-|   |   |   |   |   |   |   |--- leg_room_service <= -1.54
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes <= 0.56
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- arrival_delay_in_minutes >  0.56
-|   |   |   |   |   |   |   |   |   |--- flight_distance <= 0.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |--- flight_distance >  0.20
-|   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |--- leg_room_service >  -1.54
-|   |   |   |   |   |   |   |   |--- flight_distance <= 0.37
-|   |   |   |   |   |   |   |   |   |--- on-board_service <= 0.03
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service <= -1.46
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- checkin_service >  -1.46
-|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |   |   |   |   |   |--- on-board_service >  0.03
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel <= 0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
-|   |   |   |   |   |   |   |   |   |   |--- type_of_travel >  0.41
-|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |   |   |   |   |   |--- flight_distance >  0.37
-|   |   |   |   |   |   |   |   |   |--- class: 1
-|   |   |   |--- seat_comfort >  1.20
-|   |   |   |   |--- class: 1
+|   |   |   |   |   |--- seat_comfort >  1.20
+|   |   |   |   |   |   |--- class: 1
